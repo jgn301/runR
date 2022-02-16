@@ -3,8 +3,8 @@
 A little piece of code to quickly and easily run R scripts on the cluster. Useful to run R-scripts on cluster without having to think about `sbatch` parameters in detail. Also keeps track of the finished jobs (runtime, exit status, job filename etc.) and records the executed commands and requested resources in the `.out` files. 
 
 ## Preparation
-`runR.sh`, `runR_helper.sh` and `slurm-overview.txt` should be placed in the `~`(home) directory. The `.sh` files need to be made executable, like `chmod -X runR.sh` and 
-`chmod -X runR_helper.sh`. 
+`runR.sh`, `runR_helper.sh` and `slurm-overview.txt` should be placed in the `~`(home) directory. The `.sh` files need to be made executable, like `chmod 777 runR.sh` and 
+`chmod 777 runR_helper.sh`. 
 
 ## Usage
 The script works as follows. Suppose that there is a directory `dir1`, where an R-script called `samplescript.R` shall be run in, using 1 node with 10 CPUs and 1500 MB of RAM. After `cd`ing into `dir1`, the command would be:
